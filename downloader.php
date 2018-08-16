@@ -7,7 +7,7 @@ class Downloader
 
 	public static function download($url, $fileName, $date)
 	{
-		ini_set('memory_limit','2048M');	//调整最大占用内存
+		ini_set('memory_limit','512M');	//调整最大占用内存
 		$fileName = preg_replace('# #','',$fileName);
 		if (!is_dir('./videos')) {
 			mkdir('./videos');
